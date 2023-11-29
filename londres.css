@@ -18,12 +18,12 @@ body::before {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to top, #000000, transparent);
-    z-index: -1; /* Establece un z-index negativo para el fondo con gradiente */
+    z-index: -1;
 }
 
 header {
     position: relative;
-    z-index: 1; /* Asegúrate de que el header está por encima del fondo con gradiente */
+    z-index: 1;
     padding: 10px;
     display: flex;
     align-items: center;
