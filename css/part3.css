@@ -1,0 +1,51 @@
+body {
+    position: relative;
+    background-image: url('/img/fons.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000, transparent);
+    z-index: -1; /* Establece un z-index negativo para el fondo con gradiente */
+}
+
+header {
+    position: relative;
+    z-index: 1; /* Asegúrate de que el header está por encima del fondo con gradiente */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+#logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+span {
+    font-size: 20px;
+    color: #000;
+  }

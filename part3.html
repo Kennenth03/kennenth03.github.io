@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>VIATGES KENNENTH</title>
+    <link rel="stylesheet" href="css/part3.css">
+    <link rel="icon" type="image/jpg" href="avion2.png" />
+
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" style="display: flex; align-items: center;">
+            <img id="logo" src="avion.png" alt="Logo">
+            <h1 style="margin-left: 10px;">KENNENTH AIRLINES</h1>
+        </a>
+    </header>
+
+    <!-- Cambiamos el src del iframe por el del nuevo video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4" allowfullscreen></iframe>
+
+    
+    <!-- Añadimos un div para mostrar el contador -->
+    <div id="contador">0</div>
+
+    <!-- Añadimos un botón para contar los clics -->
+    <button id="boton">Contar clics</button>
+
+
+
+    <!-- Añadimos un script para crear la variable y la función -->
+    <script>
+        // Creamos una variable para almacenar el contador
+        let contador = 0;
+
+        // Creamos una función que incremente el contador y lo muestre
+        function contarClicks() {
+            // Incrementamos el contador
+            contador++;
+
+            // Obtenemos el elemento donde queremos mostrar el contador
+            let elemento = document.getElementById("contador");
+
+            // Actualizamos el contenido del elemento con el contador
+            elemento.innerHTML = contador;
+        }
+
+        // Añadimos un evento de click al elemento que queremos contar
+        // En este caso, el logo de la página
+        let logo = document.getElementById("logo");
+        logo.addEventListener("click", contarClicks);
+
+        // Añadimos un evento de click al botón que queremos contar
+        let boton = document.getElementById("boton");
+        boton.addEventListener("click", contarClicks);
+    </script>
+
+</body>
+
+

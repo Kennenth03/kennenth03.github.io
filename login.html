@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>VIATGES KENNENTH</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="icon" type="image/jpg" href="/img/avion2.png" />
+
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" style="display: flex; align-items: center;">
+      <img id="logo" src="/img/avion.png" alt="Logo">
+      <h1 style="margin-left: 10px;">KENNENTH AIRLINES</h1>
+    </a>
+  </header>
+
+  <div class="registration-container">
+    <h2>Book a fligh with Kenneth Airlines</h2>
+
+    <fieldset id="personal-info">
+      <legend>Personal Information</legend>
+
+      <label for="firstname">Name:</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Introduce your name" required>
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Introduce your last name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Introduce your email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Introduce your phone number" required>
+    </fieldset>
+
+    <fieldset id="travel-info">
+      <legend>Travel Info</legend>
+
+      <label for="destination">Destino:</label>
+      <select id="destination" name="destination" required>
+        <option value="">Select your destination</option>
+        <option value="París">Bali</option>
+        <option value="Londres">Palawan</option>
+        <option value="Roma">Londres</option>
+      </select>
+
+      <label for="departure">Fecha de salida:</label>
+      <input type="date" id="departure" name="departure" required>
+
+      <label for="return">Fecha de regreso:</label>
+      <input type="date" id="return" name="return" required>
+    </fieldset>
+
+    <fieldset id="preferences">
+      <legend>Preferencias</legend>
+
+      <label for="type_of_seat">Tipo de asiento:</label>
+      <select id="type_of_seat" name="type_of_seat" required>
+        <option value="">Select Class</option>
+        <option value="Economy">Economy</option>
+        <option value="Business">Business</option>
+        <option value="First class">First class</option>
+      </select>
+
+      <label for="special_requests">Special Request</label>
+      <textarea id="special_requests" name="special_requests" rows="4" placeholder="Request especial request that you have"></textarea>
+    </fieldset>
+
+    <button type="submit">Book Flight!</button>
+  </div>
+
+</body>
+
+</html>
