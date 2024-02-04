@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenennth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Kennenth Calivozo</a>
+
+        <nav class="navbar">
+            <a href="index.html">Menu principal</a>
+            <a href="/pagines/sobremi.html">Sobre mi</a>
+            <a href="/pagines/cursos.html">Cursos</a>
+            <a href="#">Iniciar Sesión</a>
+            <a href="#">Registrarse</a>
+        </nav>
+    </header>
+
+    
+    <div class="container">
+        <div class="titulo">
+            <p>Hola soy Kennenth, estudiante de primer año de Administración y Planificación de Redes con perfil de Ciberseguridad. Bienvenidos a mi curso</p>
+        </div>
+        <div class="imagen">
+    
+        </div>
+    </div>
+
+    <script>
+        const cookieBox = document.querySelector(".wrapper"),
+        acceptBtn = cookieBox.querySelector(".buttons button");
+
+        acceptBtn.onclick = ()=>{
+            document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30
+            if(document.cookie){
+                cookieBox.classList.add('hide');
+            }else{
+                alert("ERROR: Los cookies no se pueden habilitar!")
+            }
+        }
+    </script>
+</body>
+</html>
