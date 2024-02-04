@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
     margin-top: 300px;
     width: 60%; /* o el ancho que prefieras */
-    
+    position: relative;
 }
 
 .titulo {
