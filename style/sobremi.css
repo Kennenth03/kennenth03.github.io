@@ -20,7 +20,7 @@ body {
     margin: 0 auto;
     margin-top: 300px;
     width: 60%; /* o el ancho que prefieras */
-    position: relative;
+    
 }
 
 .titulo {
@@ -73,45 +73,35 @@ body {
     width: 100%;
 }
 
-.container{
-    color: #fff;
-    margin-left: 500px;
-    margin-top: 300px;
-    width: 60%; /* o el ancho que prefieras */
-    position: relative;
-}
-
-.titulo{
-    text-align: justify;
-    font-size: 30px;  
-}
-
-.p {
-    text-align: center;
-}
-
-.titulo p{
-    margin-top: 10px;
-}
-
-.imagen {
+.padre {
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 1300px;
+    height: 800px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.imagen img{
-    margin-top: 50px;
-    width: 600px;
+
+.hijo {
+    color: white;
+    text-align: justify;
+    text-align-last:center;
+    font-size: 30px;
+    font-weight: 100px;
+    width: 1500px;
+    height: 650px;
 }
 
-@media (max-width: 1920px) {
-    .container {
-        margin-left: 400px;
-        margin-top: 150px;
-    }
-
-    .titulo{
-        text-align: justify;
-        font-size: 28px;  
-    }
+.hijo img{
+    max-width: 50%; /* limita el ancho máximo de la imagen al 80% del contenedor */
+    height: auto; /* mantiene la proporción de la imagen */
+    object-fit: cover; /* recorta la imagen para que cubra todo el espacio disponible */
 }
+
+
+
+
+
+
 

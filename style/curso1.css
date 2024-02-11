@@ -18,12 +18,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.container{
-    position: fixed;
-    margin-top: 1vh;
-    margin-left: 1vh;
-    margin-right: 45vh; 
-}
 
 .titulo {
     text-align: center;
@@ -73,6 +67,14 @@ body {
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+.padre {
+  width: 1300px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   

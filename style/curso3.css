@@ -15,13 +15,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.container{
-    position: fixed;
-    margin-top: 20vh;
-    margin-left: 36vh;
-    margin-right: 20vh;
-    
-}
 
 .titulo {
     text-align: center;
@@ -71,4 +64,14 @@ body {
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+.padre {
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 1300px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
