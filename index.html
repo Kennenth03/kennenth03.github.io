@@ -15,33 +15,19 @@
             <a href="index.html">Menu principal</a>
             <a href="/pagines/sobremi.html">Sobre mi</a>
             <a href="/pagines/cursos.html">Cursos</a>
-            <a href="#">Iniciar Sesión</a>
+            <a href="/pagines/iniciar.html">Iniciar Sesión</a>
             <a href="#">Registrarse</a>
         </nav>
     </header>
 
     
-    <div class="container">
-        <div class="titulo">
+    <div class="padre">
+        <div class="hijo">
             <p>Hola soy Kennenth, estudiante de primer año de Administración y Planificación de Redes con perfil de Ciberseguridad. Bienvenidos a mi curso</p>
         </div>
         <div class="imagen">
     
         </div>
     </div>
-
-    <script>
-        const cookieBox = document.querySelector(".wrapper"),
-        acceptBtn = cookieBox.querySelector(".buttons button");
-
-        acceptBtn.onclick = ()=>{
-            document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30
-            if(document.cookie){
-                cookieBox.classList.add('hide');
-            }else{
-                alert("ERROR: Los cookies no se pueden habilitar!")
-            }
-        }
-    </script>
 </body>
 </html>

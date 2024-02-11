@@ -120,38 +120,28 @@ body {
     width: 100%;
 }
 
-.container{
-    color: #fff;
-    margin-left: 490px;
-    margin-top: 500px;
-    width: 60%; 
-    position: fixed;
-}
-
-.titulo{
-    text-align: center;
-    font-size: 30px;
-}
-
-.imagen {
+.padre {
+    margin-top: 150px;
+    margin-left: 450px;
+    width: 1000px;
+    height: 800px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.imagen img{
-    margin-top: 50px;
-    width: 500px;
+
+.hijo {
+    color: white;
+    text-align: justify;
+    text-align-last:center;
+    font-size: 30px;
+    font-weight: 100px;
+    width: 1500px;
+    height: 650px;
+    display: flex; /* activa el modo flex */
+    align-items: center; /* centra el texto verticalmente */
 }
 
-@media (max-width: 1920px) {
-    .container {
-        margin-left: 390px;
-        margin-top: 400px;
-    }
-}
 
-@media (max-width: 1200px) {
-    .container {
-        margin-left: 390px;
-        margin-top: 400px;
-    }
-}
+
+    
